@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitarth Parekh - Graphic Designer</title>
+  <meta name="description" content="Hitarth Parekh is a graphic designer with 3+ years of freelance experience specializing in branding, visual identity, campaigns, social media and digital design.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="custom-cursor" id="custom-cursor">VIEW</div>
+  
+  <nav id="nav">
+    <div class="container nav-inner">
+      <div class="nav-brand meta">HITARTH PAREKH</div>
+      <div class="nav-links">
+        <a href="#work" class="nav-link meta">WORK</a>
+        <a id="btn-index" class="nav-link meta">INDEX</a>
+        <a href="#about" class="nav-link meta">ABOUT</a>
+        <a href="#experience" class="nav-link meta">EXPERIENCE</a>
+        <a href="#contact" class="nav-link meta">CONTACT</a>
+      </div>
+      <a href="/resume.pdf" target="_blank" class="nav-resume nav-link meta">RESUME &nearr;</a>
+      <div class="mobile-menu-btn meta">MENU</div>
+    </div>
+  </nav>
+
+  <!-- FULL SCREEN VISUAL INDEX -->
+  <div id="visual-index" class="visual-index">
+    <div class="index-header">
+      <div class="meta" style="color: var(--white);">INDEX / ARCHIVE</div>
+      <div id="btn-index-close" class="index-close">&times;</div>
+    </div>
+    <div class="index-list" id="index-list-container">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox-overlay">
+    <div class="lightbox-close" id="lightbox-close">&times;</div>
+    <div class="lightbox-prev" id="lightbox-prev">&larr;</div>
+    <img src="" class="lightbox-img" id="lightbox-img" alt="Zoomed view">
+    <div class="lightbox-next" id="lightbox-next">&rarr;</div>
+  </div>
+
+  <!-- MAIN HOME VIEW -->
+  <div id="home-view">
+    
+    <!-- Hero Section -->
+    <section class="container hero" id="hero">
+      <div class="grid-12 hero-content">
+        <div class="hero-left">
+          <div class="hero-meta reveal">
+            <div class="meta">GRAPHIC DESIGNER</div>
+            <div class="meta">03+ YEARS / FREELANCE</div>
+            <div class="meta">INDIA / 2026</div>
+          </div>
+          <div class="hero-text reveal" style="transition-delay: 0.1s;">
+            DESIGNING<br>VISUALS THAT<br>MAKE IDEAS<br>IMPOSSIBLE<br>TO IGNORE.
+          </div>
+        </div>
+        
+        <div class="hero-right reveal" style="transition-delay: 0.3s;">
+          <img src="/Covers/Awaken Cover.png" class="hero-stack-img" alt="Awaken">
+          <img src="/Covers/palmique Cover.png" class="hero-stack-img" alt="Palmique">
+          <img src="/Covers/tc cover.png" class="hero-stack-img" alt="Travel">
+        </div>
+      </div>
+      
+      <div class="hero-bottom reveal" style="transition-delay: 0.5s;">
+        <div class="meta">SELECTED WORK &darr;</div>
+        <div class="meta">01 - 09</div>
+      </div>
+    </section>
+
+    <!-- Selected Work Header -->
+    <section id="work" class="container" style="margin-bottom: 0;">
+      <div class="grid-12 work-header reveal">
+        <h2 class="huge work-title">SELECTED<br>WORK</h2>
+        <div class="meta work-count">01 - 09</div>
+      </div>
+    </section>
+
+    <!-- STRICT 12-COLUMN PROJECTS -->
+    
+    <div id="home-projects-container">
+      <!-- Generated via JS for consistency, or we can leave hardcoded. Since we want to use the exact data.js descriptions, let's keep it hardcoded for homepage performance, and just let main.js do the case studies. Wait, the user wanted specific descriptions. I will just render them exactly as they are. -->
+    </div>
+    
+    <!-- 01 AWAKEN -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">01 / AWAKEN</div>
+      </div>
+      <div class="project-row p01" id="awaken-branding">
+        <div class="project-meta">
+          <div class="proj-num">01</div>
+          <h3 class="project-title">AWAKEN</h3>
+          <div class="meta project-category">BRAND IDENTITY<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">A visual identity developed around a warm, tactile experience, combining editorial typography, product storytelling and a distinct visual language.</p>
+          <a href="#awaken-branding-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+        <a href="#awaken-branding-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/Awaken Cover.png" alt="Awaken" class="project-img">
+        </a>
+      </div>
+    </section>
+
+    <!-- 02 PALMIQUE -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">02 / PALMIQUE</div>
+      </div>
+      <div class="project-row p02" id="palmique-branding">
+        <a href="#palmique-branding-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/palmique Cover.png" alt="Palmique" class="project-img">
+        </a>
+        <div class="project-meta">
+          <div class="proj-num">02</div>
+          <h3 class="project-title">PALMIQUE</h3>
+          <div class="meta project-category">BRANDING<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">Develop a premium branding aesthetic for Palmique focusing on delicacy, space, and a refined lifestyle visual language.</p>
+          <a href="#palmique-branding-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 TRAVEL CAMPAIGN -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">03 / TRAVEL CAMPAIGN</div>
+      </div>
+      <div class="project-row p03" id="travel-social">
+        <div class="project-meta">
+          <div class="proj-num">03</div>
+          <h3 class="project-title">TRAVEL CAMPAIGN</h3>
+          <div class="meta project-category">CAMPAIGN DESIGN<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">A highly curated 9x9 dense social campaign focusing on visual storytelling, high-contrast aesthetics, and cohesive alignment.</p>
+          <a href="#travel-social-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+        <a href="#travel-social-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/tc cover.png" alt="Travel Campaign" class="project-img">
+        </a>
+      </div>
+    </section>
+
+    <!-- 04 MITTY -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">04 / MITTY</div>
+      </div>
+      <div class="project-row p04" id="mitty-social">
+        <a href="#mitty-social-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/cover.png" alt="Mitty" class="project-img">
+        </a>
+        <div class="project-meta">
+          <div class="proj-num">04</div>
+          <h3 class="project-title">MITTY</h3>
+          <div class="meta project-category">PACKAGING<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">Product-centric packaging assets combining clean, clinical studio lighting with minimalist layouts to emphasize product quality.</p>
+          <a href="#mitty-social-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 CADET -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">05 / CADET</div>
+      </div>
+      <div class="project-row p05" id="cadet-logo">
+        <div class="project-meta">
+          <div class="proj-num">05</div>
+          <h3 class="project-title">CADET</h3>
+          <div class="meta project-category">EDITORIAL<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">A bold, recognizable fashion editorial direction focused on geometric construction and heavy weight type with massive whitespace.</p>
+          <a href="#cadet-logo-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+        <a href="#cadet-logo-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/cadet cover.png" alt="Cadet" class="project-img">
+        </a>
+      </div>
+    </section>
+
+    <!-- 06 CANDID CREW -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">06 / CANDID CREW</div>
+      </div>
+      <div class="project-row p06" id="candid-crew-logo">
+        <div class="project-meta">
+          <div class="proj-num">06</div>
+          <h3 class="project-title">CANDID CREW</h3>
+          <div class="meta project-category">BRANDING<br>2026</div>
+          <a href="#candid-crew-logo-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start; margin-top: 2rem;">VIEW FULL CASE STUDY &nearr;</a>
+        </div>
+        <a href="#candid-crew-logo-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/cc cover.png" alt="Candid Crew" class="project-img">
+        </a>
+        <div class="p06-details">
+          <div>
+            <div class="meta mb-2">THE IDEA</div>
+            <p class="body">Establish a playful, vibrant identity utilizing custom letterforms and dynamic, layered compositions.</p>
+          </div>
+          <div>
+            <div class="meta mb-2">APPLICATIONS</div>
+            <p class="body">Brand marks, visual language, paper textures, editorial photography.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 DGL -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">07 / DGL</div>
+      </div>
+      <div class="project-row p07" id="dgl-logo">
+        <a href="#dgl-logo-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/DGL Cover.png" alt="DGL" class="project-img">
+        </a>
+        <div class="project-meta">
+          <div class="proj-num">07</div>
+          <h3 class="project-title">DGL</h3>
+          <div class="meta project-category">DIGITAL<br>2025</div>
+          <p class="body project-desc" style="margin-top: 1rem;">Modernizing the DGL brand identity through a cleaner, more scalable logo system adapted for digital application.</p>
+          <a href="#dgl-logo-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 PAWFECT LODGE -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">08 / PAWFECT LODGE</div>
+      </div>
+      <div class="project-row p08" id="pawfect-lodge-logo">
+        <div class="project-meta">
+          <div class="proj-num">08</div>
+          <h3 class="project-title">PAWFECT<br>LODGE</h3>
+          <div class="meta project-category">BRANDING<br>2025</div>
+          <p class="body project-desc" style="margin-top: 1rem;">Create a friendly, approachable logo and branding rollout.</p>
+          <a href="#pawfect-lodge-logo-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+        <a href="#pawfect-lodge-logo-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/Pawfect cover.png" alt="Pawfect Lodge" class="project-img">
+        </a>
+      </div>
+    </section>
+
+    <!-- 09 AURALIZE -->
+    <section class="container reveal">
+      <div class="grid-12 project-divider">
+        <div class="meta">09 / AURALIZE</div>
+      </div>
+      <div class="project-row p09" id="auralize-branding">
+        <div class="project-meta">
+          <div class="proj-num">09</div>
+          <h3 class="project-title">AURALIZE</h3>
+          <div class="meta project-category">VISUAL IDENTITY<br>2026</div>
+          <p class="body project-desc" style="margin-top: 1rem;">A distinct brand direction establishing a unique visual identity and application rollout.</p>
+          <a href="#auralize-branding-cs" class="meta cs-trigger" style="color: var(--white); border-bottom: 1px solid var(--white); display: inline-block; align-self: flex-start;">VIEW PROJECT &nearr;</a>
+        </div>
+        <a href="#auralize-branding-cs" class="project-img-wrapper hover-trigger cs-trigger" data-cursor="VIEW">
+          <img src="/Covers/Auralize Cover.png" alt="Auralize" class="project-img">
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container reveal">
+      <div class="grid-12">
+        <div style="grid-column: 1 / 13; margin-bottom: 4rem;">
+          <h2 class="huge" style="text-transform: none; line-height: 0.9;">"I LIKE MAKING<br>THINGS LOOK<br>INTENTIONAL."</h2>
+        </div>
+        <div style="grid-column: 1 / 9;">
+          <p class="h3 font-thin" style="color: var(--white); margin-bottom: 2rem; max-width: 35ch;">
+            I'm Hitarth Parekh, a graphic designer with 3+ years of freelance experience.
+          </p>
+          <p class="body mb-4">
+            I work across branding, visual identity, social media, campaigns, posters, packaging and digital design.
+          </p>
+          <p class="body">
+            I trained in graphic design at Arena Animation and have developed my practice through hands-on freelance work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design DNA -->
+    <section class="container dna-section reveal">
+      <div class="grid-12">
+        <div class="dna-grid">
+          <div class="meta mb-8">DESIGN DNA</div>
+          <div class="dna-word">TYPE</div>
+          <div class="dna-word">IMAGE</div>
+          <div class="dna-word">SPACE</div>
+          <div class="dna-word">FORM</div>
+          <div class="dna-word">CONTRAST</div>
+          <div class="dna-word" style="border-bottom: none;">RHYTHM</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thinking -->
+    <section class="container typo-section reveal">
+      <div class="grid-12">
+        <div style="grid-column: 1 / 4;" class="meta">HOW I THINK</div>
+        <div class="think-grid">
+          <div class="think-item">
+            <div class="think-num">01 - CLARITY</div>
+            <p class="body">Design should communicate before it decorates.</p>
+          </div>
+          <div class="think-item">
+            <div class="think-num">02 - COMPOSITION</div>
+            <p class="body">Every element should know why it exists.</p>
+          </div>
+          <div class="think-item">
+            <div class="think-num">03 - CONTEXT</div>
+            <p class="body">The design should fit the audience and medium.</p>
+          </div>
+          <div class="think-item">
+            <div class="think-num">04 - EXPERIMENTATION</div>
+            <p class="body">Explore unexpected directions without losing the idea.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="container typo-section reveal">
+      <div class="grid-12">
+        <div style="grid-column: 1 / 7;">
+          <div class="meta mb-4">SKILLS</div>
+          <ul class="list-typo">
+            <li>GRAPHIC DESIGN</li>
+            <li>BRANDING</li>
+            <li>VISUAL IDENTITY</li>
+            <li>SOCIAL MEDIA</li>
+            <li>CAMPAIGN DESIGN</li>
+            <li>POSTERS</li>
+            <li>PACKAGING</li>
+            <li>TYPOGRAPHY</li>
+            <li>LAYOUT</li>
+            <li>DIGITAL DESIGN</li>
+            <li>ART DIRECTION</li>
+          </ul>
+        </div>
+        <div style="grid-column: 7 / 13;">
+          <div class="meta mb-4">TOOLS</div>
+          <ul class="list-typo">
+            <li>ADOBE PHOTOSHOP</li>
+            <li>ADOBE ILLUSTRATOR</li>
+            <li>ADOBE INDESIGN</li>
+            <li>FIGMA</li>
+            <li>AFTER EFFECTS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="container reveal">
+      <div class="grid-12 border-top">
+        <div style="grid-column: 1 / 7;">
+          <div class="huge" style="line-height: 0.8; color: var(--white); margin-bottom: 1rem;">03+</div>
+          <div class="h2">YEARS</div>
+          <div class="meta mt-2" style="color: var(--white);">FREELANCE<br>GRAPHIC DESIGN</div>
+        </div>
+        <div style="grid-column: 7 / 13; display: flex; flex-direction: column; justify-content: center;">
+          <div class="h2" style="color: var(--white);">ARENA ANIMATION</div>
+          <div class="meta mt-2" style="color: var(--white);">GRAPHIC DESIGN TRAINING</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <footer id="contact" class="container reveal">
+      <div class="grid-12">
+        <div class="footer-cta">
+          <h2 class="huge" style="color: var(--white);">LET'S MAKE<br>SOMETHING<br>GOOD.</h2>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <div class="meta mb-2" style="color: var(--white);">HITARTH PAREKH</div>
+            <div class="meta">GRAPHIC DESIGNER</div>
+          </div>
+          <div class="footer-links">
+            <a href="mailto:hitarthparekh8@gmail.com" class="meta" style="color: var(--white);">EMAIL &nearr;</a>
+            <a href="https://www.linkedin.com/in/hitarth-parekh/" target="_blank" class="meta" style="color: var(--white);">LINKEDIN &nearr;</a>
+            <a href="https://www.behance.net/hitarthh" target="_blank" class="meta" style="color: var(--white);">BEHANCE &nearr;</a>
+          </div>
+          <div style="text-align: right;">
+            <div class="meta mb-4">&copy; 2026</div>
+            <a href="#" class="meta" style="color: var(--white);" onclick="window.scrollTo(0,0); return false;">BACK TO TOP &uarr;</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div> <!-- END HOME VIEW -->
+
+  <!-- CASE STUDY VIEW -->
+  <div id="case-study-view">
+    <div class="container">
+      <div class="grid-12">
+        <div style="grid-column: 1 / 13;">
+          <a href="#" id="back-btn" class="meta" style="display: inline-block; margin-bottom: 4rem; color: var(--white);">&larr; BACK TO INDEX</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study Header -->
+    <div class="container">
+      <div class="grid-12">
+        <div class="cs-header">
+          <div class="meta mb-2" id="cs-num">01</div>
+          <h1 class="huge" id="cs-title">TITLE</h1>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Meta Grid -->
+    <div class="container">
+      <div class="cs-meta-grid">
+        <div>
+          <div class="meta mb-2">CATEGORY</div>
+          <div class="h3 font-thin" id="cs-category">Branding</div>
+        </div>
+        <div>
+          <div class="meta mb-2">YEAR</div>
+          <div class="h3 font-thin" id="cs-year">2026</div>
+        </div>
+        <div>
+          <div class="meta mb-2">ROLE</div>
+          <div class="h3 font-thin" id="cs-role">Graphic Designer</div>
+        </div>
+        <div>
+          <div class="meta mb-2">TOOLS</div>
+          <div class="h3 font-thin" id="cs-tools">Illustrator</div>
+        </div>
+        <div>
+          <div class="meta mb-2">CLIENT</div>
+          <div class="h3 font-thin" id="cs-client">Ama Williams</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="container">
+      <div class="grid-12">
+        <div style="grid-column: 1 / 13;">
+          <img src="" id="cs-hero-img" alt="Hero" class="cs-full-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro Overview -->
+    <div class="container">
+      <div class="grid-12">
+        <div class="cs-intro-block">
+          <div class="cs-intro-text" id="cs-overview">Overview text goes here.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Dynamic Galleries injected here -->
+    <div class="container" id="cs-dynamic-content">
+    </div>
+    
+    <!-- Next Project Navigation -->
+    <div class="container">
+      <div class="grid-12">
+        <div class="cs-navigation">
+          <a href="#" id="cs-prev" class="cs-nav-btn">
+            <div class="meta mb-2">PREVIOUS</div>
+            <div class="huge">&larr; <span id="cs-prev-title">TITLE</span></div>
+          </a>
+          <a href="#" id="cs-next" class="cs-nav-btn" style="text-align: right;">
+            <div class="meta mb-2">NEXT</div>
+            <div class="huge"><span id="cs-next-title">TITLE</span> &rarr;</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
