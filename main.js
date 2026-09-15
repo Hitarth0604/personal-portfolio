@@ -197,19 +197,19 @@ document.addEventListener('DOMContentLoaded', () => {
       secWrapper.className = 'grid-12 cs-section';
       
       const titleWrapper = document.createElement('div');
-      titleWrapper.style.gridColumn = '1 / 13';
+      titleWrapper.className = 'cs-section-inner';
       titleWrapper.innerHTML = `<div class="meta cs-section-title">${section.title}</div>`;
       secWrapper.appendChild(titleWrapper);
 
       const gallery = document.createElement('div');
-      gallery.style.gridColumn = '1 / 13';
+      gallery.className = 'cs-section-inner';
       
-      if(section.layout === 'full-width') gallery.className = 'cs-gallery-full';
-      else if(section.layout === '50-50') gallery.className = 'cs-gallery-50-50';
-      else if(section.layout === '70-30') gallery.className = 'cs-gallery-70-30';
-      else if(section.layout === 'editorial-collage') gallery.className = 'cs-gallery-editorial';
-      else if(section.layout === '3-col') gallery.className = 'cs-gallery-3-col';
-      else gallery.className = 'cs-gallery-full';
+      if(section.layout === 'full-width') gallery.classList.add('cs-gallery-full');
+      else if(section.layout === '50-50') gallery.classList.add('cs-gallery-50-50');
+      else if(section.layout === '70-30') gallery.classList.add('cs-gallery-70-30');
+      else if(section.layout === 'editorial-collage') gallery.classList.add('cs-gallery-editorial');
+      else if(section.layout === '3-col') gallery.classList.add('cs-gallery-3-col');
+      else gallery.classList.add('cs-gallery-full');
 
       section.images.forEach((src) => {
         const imgIndex = currentImgOffset;
