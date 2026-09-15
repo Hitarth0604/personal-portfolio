@@ -203,6 +203,7 @@ nav {
 .cs-section-title { border-bottom: 1px solid var(--border); padding-bottom: 1rem; margin-bottom: 4rem; }
 
 /* Standard Gallery Grid Types */
+.cs-section-inner { grid-column: 1 / 13; }
 .cs-gallery-full { display: grid; grid-template-columns: 1fr; gap: 32px; }
 .cs-gallery-50-50 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .cs-gallery-70-30 { display: grid; grid-template-columns: 8fr 4fr; gap: 32px; }
@@ -349,7 +350,7 @@ footer { padding: 8rem 0 4rem; margin-top: 8rem; border-top: 1px solid var(--bor
   .dna-grid { grid-column: 1 / 9; }
   .think-grid { grid-column: 3 / 9; }
   
-  .cs-header, .cs-meta-grid, .cs-intro-block, .cs-section, .cs-testimonial, .cs-navigation, .footer-cta, .footer-bottom { grid-column: 1 / 9; }
+  .cs-header, .cs-meta-grid, .cs-intro-block, .cs-section, .cs-section-inner, .cs-testimonial, .cs-navigation, .footer-cta, .footer-bottom { grid-column: 1 / 9; }
   
   .cs-gallery-70-30 { grid-template-columns: 1fr 1fr; }
   .cs-gallery-editorial { grid-template-columns: repeat(8, 1fr); }
@@ -389,7 +390,7 @@ footer { padding: 8rem 0 4rem; margin-top: 8rem; border-top: 1px solid var(--bor
   .dna-grid { grid-column: 1 / 2; }
   .think-grid { grid-column: 1 / 2; grid-template-columns: 1fr; gap: 2rem; }
   
-  .cs-header, .cs-meta-grid, .cs-intro-block, .cs-section, .cs-testimonial, .cs-navigation, .footer-cta, .footer-bottom { grid-column: 1 / 2; }
+  .cs-header, .cs-meta-grid, .cs-intro-block, .cs-section, .cs-section-inner, .cs-testimonial, .cs-navigation, .footer-cta, .footer-bottom { grid-column: 1 / 2; }
   
   .cs-meta-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .cs-meta-grid div { border-right: none; }
